@@ -151,19 +151,3 @@ if user_input:
     with st.spinner("Crunching the numbers..."):
         answer = ask_gemini(parts)
     add_message("assistant", "text", answer)
-.streamlit/secrets.toml.example
-Copy this to .streamlit/secrets.toml (drop the .example) and fill in real values. Never commit the real secrets.toml - only this template file.
-GEMINI_API_KEY = "your-gemini-api-key-here"
- 
-# From your Twilio Console (console.twilio.com):
-TWILIO_ACCOUNT_SID = "your-twilio-account-sid-here"
-TWILIO_AUTH_TOKEN = "your-twilio-auth-token-here"
- 
-# The Twilio Sandbox's shared WhatsApp number - leave as-is unless you have
-# your own approved WhatsApp sender.
-TWILIO_WHATSAPP_FROM = "whatsapp:+14155238886"
- 
-# The Content SID of your WhatsApp Content Template (Twilio Console >
-# Messaging > Content Template Builder). Required because WhatsApp does not
-# allow plain free-text messages for business-initiated sends.
-TWILIO_CONTENT_SID = "your-content-template-sid-here"
