@@ -1,0 +1,6 @@
+
+streamlit
+twilio
+pandas
+opencv-python
+Pillow
